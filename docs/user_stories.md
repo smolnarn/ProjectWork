@@ -1,19 +1,16 @@
 # User Stories
 
-## 1. Cookie-k elfogadása
-1. Klikk a "Minden Cookie elfogadása" gombra.
-2. Leellenőrizni a Cookie overlay eltűnt-e.
+## 1. Accept Cookies
 
-## 2. Bejelentkezés
-*Precondition: Van már regisztrált felhasználó*
-1. Klikk a "Bejelentkezés" gombra.
-2. 
 
-## 3. Termékek megjelennek-e
-1.
+## 2. Login 
 
-## 4. Egy termék kosárba helyezése
-1.
 
-## 5. Egy termék törlése a kosárból
-1.
+## 3. Products are displayed
+
+
+## 4. Adding a product to the cart
+
+
+## 5. Delete a product from the cart
+

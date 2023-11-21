@@ -1,10 +1,13 @@
-Feature: Adding a product to the cart
+Feature: The user wants to add products to the cart.
+
   Rule: Selected product is added to the cart
+
+    Background:
+      Given I open the home page
+      And I accept cookies
+
     Scenario:
-      Given the "Összes Karácsonyi készülődés" page
-      When the user select a product
-      And the user click the "Hozzáad" button
-      Then the product is added to the cart
-      And the product appears on the cart
-
-
+      When I search for "milka"
+      And 88 products are displayed and the product's name contains "milka"
+      And I add a product to the cart
+      Then the product has been added to the cart

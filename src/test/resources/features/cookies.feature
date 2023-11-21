@@ -1,9 +1,13 @@
-Feature: Accept Cookies
+Feature: In order to improve the shopping experience the user wants to accept all cookies on the page.
+
   Rule: Accept all Cookies
+
+    Background:
+      Given I open the home page
+
     Scenario:
-      Given the "https://bevasarlas.tesco.hu/groceries/hu-HU" page
-      When the page is loaded
-      Then the cookies are displayed
-      And user accept All cookies
+      When I accept cookies
+      Then the cookies are disappeared
+
 
 

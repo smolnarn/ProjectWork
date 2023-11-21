@@ -1,4 +1,4 @@
-# TESCO shoppint
+# TESCO
 https://bevasarlas.tesco.hu/groceries/hu-HU
 
 ## TC1. Accept Cookies

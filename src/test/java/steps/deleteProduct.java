@@ -1,6 +1,6 @@
-package TescoSteps;
+package steps;
 
-public class deleteProduct extends BaseTest{
+public class deleteProduct extends BaseTest {
 
     @io.cucumber.java.en.And("^I add a product to the cart$")
     public void iAddAProductToTheCart() {

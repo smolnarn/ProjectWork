@@ -1,6 +1,6 @@
-package TescoSteps;
+package steps;
 
-public class search extends BaseTest{
+public class search extends BaseTest {
 
     @io.cucumber.java.en.When("^I search for the \"([^\"]*)\"$")
     public void iSearchForThe(String arg0) throws Throwable {

@@ -1,6 +1,6 @@
 package pages;
 
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -23,7 +23,20 @@ public class HomePage extends BasePage {
     }
 
     public boolean isCookiesVisible() {
-        return isLoaded(cookieOverlay);
+        try {
+            return cookieOverlay.isDisplayed();
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+
+    }
+
+    public boolean isVisible() {
+        try {
+            return searchButton.isDisplayed() && searchField.isDisplayed();
+        } catch (NoSuchElementException e) {
+            return false;
+        }
     }
 
     /*public SearchResultPage search(String productName) {

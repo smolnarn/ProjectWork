@@ -1,22 +1,27 @@
 package steps;
 
-public class logIn {
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
-    @io.cucumber.java.en.When("^I login with the following user:$")
+public class logIn {
+    @Given("I open main page")
+    public void iOpenMainPage() {
+    }
+
+    @When("I login with the following user:")
     public void iLoginWithTheFollowingUser() {
     }
 
-    @io.cucumber.java.en.Then("^headerline contains the word \"([^\"]*)\"$")
-    public void headerlineContainsTheWord(String arg0) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new RuntimeException();
+    @Then("headerline contains the word {string}")
+    public void headerlineContainsTheWord(String arg0) {
     }
 
-    @io.cucumber.java.en.When("^click on the logout button$")
+    @When("click on the logout button")
     public void clickOnTheLogoutButton() {
     }
 
-    @io.cucumber.java.en.Then("^login button is present$")
+    @Then("login button is present")
     public void loginButtonIsPresent() {
     }
 }

@@ -14,7 +14,7 @@ import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.fail;
 
-public class BasePage implements IBasePage {
+public class BasePage {
     protected static WebDriver driver;
 
     protected static WebDriverWait wait;
@@ -28,7 +28,7 @@ public class BasePage implements IBasePage {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div#content")));
     }
 
-    @Override
+
     public boolean isLoaded(WebElement element) {
         try {
             return wait.until(ExpectedConditions.visibilityOf(element)).isDisplayed();
@@ -38,14 +38,14 @@ public class BasePage implements IBasePage {
         }
     }
 
-    @Override
+
     public boolean isInteractable(WebElement element) {
         return wait.until(ExpectedConditions.elementToBeClickable(element)).isEnabled();
     }
 
     public static void initAll() {
         driver = DriverInitializer.initDriver(BrowserType.CHROME_SELENIUM_MGR);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
     }

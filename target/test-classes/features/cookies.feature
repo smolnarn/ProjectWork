@@ -8,6 +8,7 @@ Feature: In order to improve the shopping experience the user wants to accept al
     Scenario:
       When I accept cookies
       Then the cookies are disappeared
+      And Home page still visible
 
 
 

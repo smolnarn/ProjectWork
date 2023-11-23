@@ -11,7 +11,7 @@ import pages.HomePage;
 import static browser.Settings.BASE_URL;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
-public class cookies extends BaseTest {
+public class cookies {
 
     private HomePage homePage;
 

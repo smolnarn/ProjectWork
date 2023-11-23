@@ -1,6 +1,6 @@
 package steps;
 
-public class logIn extends BaseTest {
+public class logIn {
 
     @io.cucumber.java.en.When("^I login with the following user:$")
     public void iLoginWithTheFollowingUser() {

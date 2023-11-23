@@ -1,6 +1,6 @@
 package steps;
 
-public class deleteProduct extends BaseTest {
+public class deleteProduct {
 
     @io.cucumber.java.en.And("^I add a product to the cart$")
     public void iAddAProductToTheCart() {

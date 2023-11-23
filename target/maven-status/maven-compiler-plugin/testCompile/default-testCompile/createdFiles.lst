@@ -1,0 +1,13 @@
+pages\BasePage.class
+steps\cookies.class
+pages\HomePage.class
+steps\logIn.class
+steps\hooks.class
+steps\deleteProduct.class
+pages\IBasePage.class
+browser\BrowserType.class
+browser\Settings.class
+browser\DriverInitializer$1.class
+browser\DriverInitializer.class
+steps\search.class
+steps\addProduct.class

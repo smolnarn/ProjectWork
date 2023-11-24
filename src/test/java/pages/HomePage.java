@@ -39,13 +39,11 @@ public class HomePage extends BasePage {
         }
     }
 
-    /*public SearchResultPage search(String productName) {
+    public void search(String productName) {
         searchField.sendKeys(productName);
         searchButton.click();
-        SearchResultPage searchResult = new SearchResultPage(driver);
-        searchResult.isLoaded();
-        return searchResult;
-    }*/
+
+    }
 
     public boolean isLoaded() {
         return isLoaded(acceptCookiesButton)

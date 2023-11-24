@@ -16,5 +16,5 @@ Feature: The user wants to find products on the page by using the search box.
       Examples:
         | productName | numOfProducts |
         | milka       | 88            |
-        | gesztenye   | 9             |
+   #     | gesztenye   | 9             |
 

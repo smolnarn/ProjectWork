@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class SearchResultPage extends BasePage {
 
-    @FindBy(xpath = ".results-page .pagination__items-displayed strong:nth-of-type(2)")
+    @FindBy(css = ".results-page .pagination__items-displayed strong:nth-of-type(2)")
     WebElement searchResultCount;
 
 
